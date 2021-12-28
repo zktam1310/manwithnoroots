@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+    .logo {
+        @apply text-3xl text-black font-thin;
+        font-family: 'Helvetica';
+    }
+
+    .logo_yohankrugger {
+        @apply tracking-widest text-black mt-44;
+        font-size: 10.5rem;
+        font-family: 'Source Serif Pro', serif;
+        /* white-space: nowrap; */
+        line-height: 1;
+    }
+
+    html {
+        @apply overflow-y-hidden;
+    }
+
+    body {
+        @apply h-screen overflow-y-hidden;
+    }
+
+    * {
+        @apply text-black duration-150;
+        font-family: 'Helvetica', 'Arial', sans-serif;
+    }
+
+    .page_wrapper {
+        @apply m-auto;
+        max-width: 1480px;
+    }
+
+    .man_page_wrapper {
+        @apply m-auto;
+        width: 6000px;
+    }
+
+    nav {
+        @apply p-5 flex flex-wrap;
+    }
+
+    .content_wrapper {
+        /* @apply p-8; */
+    }
+
+    .man_content_wrapper {
+        @apply flex flex-nowrap;
+    }
+
+    .home_wrapper {
+        @apply p-8;
+    }
+
+    .home_nav {
+        @apply mt-16 text-center;
+    }
+
+    .home_nav a {
+        @apply my-2 text-6xl duration-700;
+    }
+
+    .home_nav a:hover {
+        @apply text-white;
+        text-shadow: 0 3px 5px rgb(0 0 0 / .35);
+    }
+
+    .logo_frame {
+        @apply p-8;
+        width: 1500px;
+    }
+
+    .frame {
+        @apply m-5 p-5;
+        width: 1000px;
+    }
+
+    .frame img {
+        width: 90%;
+    }
+
+    footer {
+        @apply text-center text-black my-5 text-sm font-extralight absolute whitespace-nowrap;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .man_page_wrapper footer {
+        @apply fixed;
+    }
+
+    p {
+        @apply font-light;
+    }
+
+}
+
+@media (min-width:300px) and (max-width:767px) {
+
+    @layer base {
+
+        .logo {
+            @apply text-2xl;
+        }
+
+        .home_nav a {
+            @apply text-3xl;
+        }
+
+        .logo_frame {
+            width: 1300px;
+        }
+
+        .logo_yohankrugger {
+            @apply mt-36;
+            font-size: 8.5rem;
+        }
+
+        .frame {
+            @apply m-4 p-5;
+            width: 750px;
+        }
+
+    }
+
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+
+
+
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+
+
+}
