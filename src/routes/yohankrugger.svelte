@@ -62,7 +62,7 @@ function viewAddress (addressId) {
 </div>
 
 <div class="frame">
-    <img src="../../src/img/yohankrugger/1.jpg" alt="Yohan Krugger">
+    <img src="/img/yohankrugger/1.jpg" alt="Yohan Krugger">
 </div>
 
 <div class="frame">
