@@ -8,16 +8,16 @@
 @layer base {
 
     .logo {
-        @apply text-3xl text-black font-thin;
+        @apply text-3xl text-black font-thin sm:text-2xl;
         font-family: 'Helvetica';
     }
 
     .logo_yohankrugger {
-        @apply tracking-widest text-black mt-44;
+        @apply text-black mt-44 sm:mt-36;
         font-size: 10.5rem;
         font-family: 'Source Serif Pro', serif;
-        /* white-space: nowrap; */
         line-height: 1;
+        letter-spacing: 0.07em;
     }
 
     html {
@@ -64,7 +64,7 @@
     }
 
     .home_nav a {
-        @apply my-2 text-6xl duration-700;
+        @apply my-2 text-7xl duration-700 sm:text-3xl;
     }
 
     .home_nav a:hover {
@@ -78,7 +78,7 @@
     }
 
     .frame {
-        @apply m-5 p-5;
+        @apply m-5 p-5 sm:m-4 sm:p-5;
         width: 1000px;
     }
 
@@ -103,33 +103,21 @@
 
 }
 
-@media (min-width:300px) and (max-width:767px) {
+@media (max-width:480px) {
 
-    @layer base {
 
-        .logo {
-            @apply text-2xl;
-        }
-
-        .home_nav a {
-            @apply text-3xl;
-        }
-
-        .logo_frame {
-            width: 1300px;
-        }
-
-        .logo_yohankrugger {
-            @apply mt-36;
-            font-size: 8.5rem;
-        }
-
-        .frame {
-            @apply m-4 p-5;
-            width: 750px;
-        }
-
+    .logo_frame {
+        width: 1300px;
     }
+
+    .logo_yohankrugger {
+        font-size: 8.5rem;
+    }
+
+    .frame {
+        width: 750px;
+    }
+
 
 }
 
