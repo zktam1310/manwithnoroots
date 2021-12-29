@@ -2,9 +2,11 @@
 import { user } from '../stores/index'
 import { onMount, afterUpdate, onDestroy } from 'svelte'
 import { goto } from '$app/navigation'
+import { fade } from 'svelte/transition'
 let username
 let result
 let browse_addresses = []
+
 
 if ($user.username) {
     username = $user.username
@@ -56,16 +58,16 @@ function viewAddress (addressId) {
 
 <div class="logo_frame">
     <a href="/" class="logo">Man with no roots</a>
-    <div class="logo_yohankrugger">
+    <div class="logo_yohankrugger hide" in:fade={{ duration: 2000 }}>
         Yohan Krugger
     </div>
 </div>
 
-<div class="frame">
+<div class="frame" in:fade={{ duration: 2000 }}>
     <img src="/img/yohankrugger/1.jpg" alt="Yohan Krugger">
 </div>
 
-<div class="frame">
+<div class="frame" in:fade={{ duration: 2000 }}>
     <p>Yohan... <br>Yohan..<br>Yohan...</p>
 </div>
 
