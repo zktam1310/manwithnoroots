@@ -26,8 +26,6 @@ function handleWheel (e) {
     if (e.deltaY != 0)
     window.scroll(window.scrollX + e.deltaY * 3, window.scrollY)
 
-    e.preventDefault()
-
 }
 
 function horizontalScroll () {

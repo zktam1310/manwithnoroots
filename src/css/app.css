@@ -106,6 +106,9 @@
 
 @media (max-width:480px) {
 
+    html {
+        overflow-y: hidden;
+    }
 
     .logo_frame {
         /* width: 1300px; */
@@ -119,16 +122,17 @@
         width: 750px;
     }
 
+    footer {
+        font-size: 12px;
+    }
+
 
 }
 
 @media (min-width:768px) and (max-width:1024px) {
 
-
-
-}
-
-@media (min-width:768px) and (max-width:1023px) {
-
+    html {
+        overflow-y: hidden;
+    }
 
 }
