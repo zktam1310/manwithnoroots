@@ -7,11 +7,32 @@ var isHorizontal
 
 
 onMount(() => {
+
+    // const scrollContainer = document.querySelector("man_content_wrapper");
+
+    // scrollContainer.addEventListener("wheel", (evt) => {
+    //     evt.preventDefault();
+    //     scrollContainer.scrollLeft += evt.deltaY;
+    // });
+
 })
 
 afterUpdate(() => {
     checkCurrentPage()
 })
+
+function handleWheel (e) {
+
+    if (e.deltaY != 0)
+    window.scroll(window.scrollX + e.deltaY * 3, window.scrollY)
+
+    e.preventDefault()
+
+}
+
+function horizontalScroll () {
+
+}
 
 
 function checkCurrentPage () {
@@ -48,6 +69,7 @@ function logout () {
 }
 
 </script>
+
 
 {#if !isHorizontal}
 
@@ -100,4 +122,6 @@ function logout () {
 </div>
 
 {/if}
+
+<svelte:window on:wheel={handleWheel} />
 

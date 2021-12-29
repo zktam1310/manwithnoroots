@@ -21,7 +21,7 @@
     }
 
     html {
-        @apply overflow-y-hidden;
+        /* @apply overflow-y-hidden; */
     }
 
     body {
@@ -29,7 +29,7 @@
     }
 
     * {
-        @apply text-black duration-150;
+        @apply text-black;
         font-family: 'Helvetica', 'Arial', sans-serif;
     }
 
@@ -52,7 +52,7 @@
     }
 
     .man_content_wrapper {
-        @apply flex flex-nowrap;
+        @apply flex;
     }
 
     .home_wrapper {
@@ -86,10 +86,12 @@
     }
 
     footer {
-        @apply text-center text-black my-5 text-sm font-extralight absolute whitespace-nowrap;
-        bottom: 0px;
+        @apply text-center text-black text-sm font-extralight absolute whitespace-nowrap;
+        bottom: 2.2vh;
         left: 50%;
         transform: translateX(-50%);
+        line-height: 1;
+        font-size: 1.3vw;
     }
 
     .man_page_wrapper footer {
