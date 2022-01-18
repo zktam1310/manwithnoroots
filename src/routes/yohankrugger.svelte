@@ -70,7 +70,7 @@ function viewAddress (addressId) {
 </div>
 
 <div class="frame" in:fade={{ duration: 2000 }}>
-    <p>Yohan... <br>Yohan..<br>Yohan...</p>
+    <p>Yohan... <br>Yohan....<br>Yohan.....</p>
 </div>
 
 
